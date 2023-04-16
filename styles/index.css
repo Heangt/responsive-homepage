@@ -1,6 +1,6 @@
 body.default-style {
   font-family: "Poppins", sans-serif;
-  background-color: #f9f7fe;
+  font-size: 16px;
 }
 
 h1,
@@ -12,15 +12,57 @@ h2,
 h2.style {
   font-size: 24px;
 }
-p {
+
+h2.project-name {
+  font-size: 50px;
+}
+
+p.hero-details {
   font-size: 36px;
   font-weight: bold;
 }
-.style-link {
+.hero {
+  background-color: #f9f7fe;
+  padding: 150px 0;
+}
+.project-description {
+  padding: 48px 0;
+}
+a {
   padding: 18px 46px;
-  background-color: #6c63ff;
   border-radius: 4px;
+  font-weight: 500;
+}
+.contact-link {
+  background-color: #6c63ff;
   color: #ffffff;
-  text-decoration: none;
   font-size: 18px;
+  text-decoration: none;
+}
+.project-link {
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  a {
+    padding: 12px 20px;
+  }
+  p {
+    padding: 0;
+    text-align: center;
+  }
+  h1.style {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 100px 0;
+  }
+  h2.project-name {
+    font-size: 37px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
