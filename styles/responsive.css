@@ -4,6 +4,8 @@
 body.default-style {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  padding: 150px 0;
+  line-height: 30px;
 }
 
 h1,
@@ -24,6 +26,7 @@ p.hero-details {
   font-size: 36px;
   font-weight: bold;
 }
+
 .hero {
   background-color: #f9f7fe;
   padding: 150px 0;
@@ -32,18 +35,30 @@ p.hero-details {
   padding: 48px 0;
 }
 a {
-  padding: 18px 46px;
+  padding: 18px 25px;
   border-radius: 4px;
   font-weight: 500;
 }
-.contact-link {
+.about-section h1 {
+  font-size: 64px;
+}
+.about-section h2 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.about-section img {
+  border-radius: 20px;
+}
+.btn-branding {
   background-color: var(--primary-color);
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
 }
 .project-link {
-  color: #6c63ff;
+  color: var(--primary-color);
   border: 1px solid #6c63ff;
   text-decoration: none;
 }
@@ -55,7 +70,8 @@ a {
     padding: 0;
     text-align: center;
   }
-  h1.style {
+  h1.style,
+  .about-section h1 {
     font-size: 44px;
   }
   .hero {
@@ -66,6 +82,9 @@ a {
   }
   .project-description {
     padding: 0;
+    text-align: center;
+  }
+  .about-section {
     text-align: center;
   }
 }
