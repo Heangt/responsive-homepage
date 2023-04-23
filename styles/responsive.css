@@ -48,7 +48,8 @@ a {
   font-weight: 500;
 }
 .about-section h1,
-.work-section h1 {
+.work-section h1,
+.contact-section h1 {
   font-size: 64px;
 }
 .about-section h2 {
