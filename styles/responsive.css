@@ -1,5 +1,6 @@
 :root {
   --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
 }
 body.default-style {
   font-family: "Poppins", sans-serif;
@@ -10,6 +11,7 @@ body.default-style {
 
 h1,
 h2,
+h3,
 .style {
   font-family: "Playfair Display", serif;
   font-size: 96px;
@@ -20,6 +22,9 @@ h2.style {
 
 h2.project-name {
   font-size: 50px;
+}
+h3.third-header {
+  font-size: 48px;
 }
 .work-section h2.project-title {
   font-family: "Poppins", sans-serif;
@@ -42,11 +47,7 @@ p.hero-details {
 .project-description {
   padding: 48px 0;
 }
-a {
-  padding: 18px 25px;
-  border-radius: 4px;
-  font-weight: 500;
-}
+
 .about-section h1,
 .work-section h1,
 .contact-section h1 {
@@ -61,20 +62,51 @@ a {
 .about-section img {
   border-radius: 20px;
 }
-.btn-branding {
+a.btn-branding {
   background-color: var(--primary-color);
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 .project-link {
   color: var(--primary-color);
   border: 1px solid #6c63ff;
   text-decoration: none;
 }
-@media (max-width: 900px) {
+footer .contact-box {
+  background-color: #f9f7fe;
+  padding: 30px 120px;
+  border-radius: 20px;
+  margin: 100px 0 35px;
+}
+footer .contact-link a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+footer .contact-link a:hover {
+  color: var(--primary-color);
+}
+footer .social-link a {
+  background-color: var(--secondary-color);
+  padding: 5px 12px;
+  margin: 0 15px;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+footer .social-link a:hover {
+  color: white;
+  background: var(--primary-color);
+}
+@media (max-width: 1000px) {
   a {
-    padding: 12px 20px;
+    padding: 15px 12px;
+    margin-top: 20px;
   }
   p {
     padding: 0;
@@ -82,20 +114,29 @@ a {
   }
   h1.style,
   .about-section h1,
-  .work-section h1 {
-    font-size: 44px;
+  .work-section h1,
+  .contact-section h1 {
+    font-size: 40px;
+    text-align: center;
   }
   .hero {
     padding: 100px 0;
   }
-  h2.project-name {
+  h2.project-name,
+  .contact-section h3,
+  h3.third-header {
     font-size: 37px;
   }
+
   .project-description {
     padding: 0;
     text-align: center;
   }
   .about-section {
     text-align: center;
+  }
+  .contact-section h1 {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
