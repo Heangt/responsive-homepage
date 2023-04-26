@@ -12,11 +12,11 @@ body.default-style {
 h1,
 h2,
 h3,
-.style {
+.style-header {
   font-family: "Playfair Display", serif;
   font-size: 96px;
 }
-h2.style {
+h2.style-header {
   font-size: 24px;
 }
 
@@ -51,8 +51,6 @@ p.hero-details {
   margin-top: 150px;
 }
 
-.content-section h1,
-.content-section h1,
 .content-section h1 {
   font-size: 64px;
 }
@@ -65,22 +63,23 @@ p.hero-details {
 .content-section img {
   border-radius: 20px;
 }
-a.btn-branding {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 18px 30px;
+a {
   border-radius: 4px;
   font-weight: 500;
 }
-.project-link {
+a.btn-branding {
+  text-decoration: none;
+
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 18px;
+  padding: 18px 30px;
+}
+a.project-link {
   color: var(--primary-color);
-  border: 1px solid #6c63ff;
+  border: 1px solid var(--primary-color);
   text-decoration: none;
   padding: 18px 30px;
-  border-radius: 4px;
-  font-weight: 500;
 }
 footer .contact-box {
   background-color: #f9f7fe;
@@ -109,9 +108,7 @@ footer .social-link a:hover {
   color: white;
   background: var(--primary-color);
 }
-.logo {
-  padding: 10px 0;
-}
+
 .menu {
   padding: 20px 0 0;
 }
@@ -137,9 +134,7 @@ footer .social-link a:hover {
     padding: 0;
     text-align: center;
   }
-  h1.style,
-  .content-section h1,
-  .content-section h1,
+  h1.style-header,
   .content-section h1 {
     font-size: 40px;
     text-align: center;
