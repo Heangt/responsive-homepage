@@ -5,7 +5,7 @@
 body.default-style {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  padding: 150px 0;
+
   line-height: 30px;
 }
 
@@ -26,12 +26,12 @@ h2.project-name {
 h3.third-header {
   font-size: 48px;
 }
-.work-section h2.project-title {
+.content-section h2.project-title {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
-.work-section p {
+.content-section p {
   font-size: 14px;
 }
 
@@ -47,19 +47,22 @@ p.hero-details {
 .project-description {
   padding: 48px 0;
 }
+.content-section {
+  margin-top: 150px;
+}
 
-.about-section h1,
-.work-section h1,
-.contact-section h1 {
+.content-section h1,
+.content-section h1,
+.content-section h1 {
   font-size: 64px;
 }
-.about-section h2 {
+.content-section h2 {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   padding: 20px 0;
 }
-.about-section img {
+.content-section img {
   border-radius: 20px;
 }
 a.btn-branding {
@@ -103,6 +106,22 @@ footer .social-link a:hover {
   color: white;
   background: var(--primary-color);
 }
+.menu {
+  padding: 20px 0;
+}
+.menu a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #272142;
+  opacity: 0.9;
+}
+.menu a:hover {
+  color: var(--primary-color);
+}
+.menu a.active {
+  color: var(--primary-color);
+}
 @media (max-width: 1000px) {
   a {
     padding: 15px 12px;
@@ -113,9 +132,9 @@ footer .social-link a:hover {
     text-align: center;
   }
   h1.style,
-  .about-section h1,
-  .work-section h1,
-  .contact-section h1 {
+  .content-section h1,
+  .content-section h1,
+  .content-section h1 {
     font-size: 40px;
     text-align: center;
   }
@@ -123,7 +142,7 @@ footer .social-link a:hover {
     padding: 100px 0;
   }
   h2.project-name,
-  .contact-section h3,
+  .content-section h3,
   h3.third-header {
     font-size: 37px;
   }
@@ -135,8 +154,11 @@ footer .social-link a:hover {
   .about-section {
     text-align: center;
   }
-  .contact-section h1 {
+  .content-section h1 {
     margin-top: 0;
     padding-top: 0;
+  }
+  .content-section {
+    margin-top: 50px;
   }
 }
