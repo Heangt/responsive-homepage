@@ -163,4 +163,7 @@ footer .social-link a:hover {
   .content-section {
     margin-top: 50px;
   }
+  .portfolio-link {
+    text-align: center;
+  }
 }
