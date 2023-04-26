@@ -42,7 +42,7 @@ p.hero-details {
 
 .hero {
   background-color: #f9f7fe;
-  padding: 150px 0;
+  padding: 200px 20px;
 }
 .project-description {
   padding: 48px 0;
@@ -78,6 +78,9 @@ a.btn-branding {
   color: var(--primary-color);
   border: 1px solid #6c63ff;
   text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 footer .contact-box {
   background-color: #f9f7fe;
@@ -106,8 +109,11 @@ footer .social-link a:hover {
   color: white;
   background: var(--primary-color);
 }
+.logo {
+  padding: 10px 0;
+}
 .menu {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .menu a {
   padding: 0 10px;
@@ -140,6 +146,7 @@ footer .social-link a:hover {
   }
   .hero {
     padding: 100px 0;
+    margin: 15px 0 0;
   }
   h2.project-name,
   .content-section h3,
